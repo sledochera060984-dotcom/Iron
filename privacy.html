@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Политика конфиденциальности — Словарь осетинского языка</title>
+  <style>
+    :root { --bg: #faf8f5; --text: #1a1a1a; --muted: #555; --accent: #c45c00; --card: #fff; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
+    h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+    .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 1.5rem; }
+    h2 { font-size: 1.1rem; margin-top: 1.75rem; color: var(--accent); }
+    p, li { font-size: 0.95rem; }
+    ul { padding-left: 1.25rem; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin: 0.5rem 0 1rem; }
+    th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: #f0ebe4; }
+    a { color: var(--accent); }
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 16px 18px;
+      box-shadow: 0 1px 4px rgba(0,0,0,.06);
+      margin-top: 1rem;
+    }
+    code { background: #f0ebe4; padding: 2px 6px; border-radius: 4px; font-size: 0.85em; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Политика конфиденциальности</h1>
+    <p class="meta">
+      Приложение: <strong>Словарь осетинского языка</strong> (ИРОНӔ)<br>
+      Пакет: <code>com.example.ironslovar</code><br>
+      Версия документа: 1.0 от 18 июня 2026 г.
+    </p>
+
+    <div class="card">
+      <p><strong>Кратко:</strong> словарь работает <strong>офлайн</strong>. Вход через Google и облачная синхронизация — <strong>по желанию</strong>. Без входа данные остаются только на вашем телефоне.</p>
+    </div>
+
+    <h2>1. Общие положения</h2>
+    <p>Настоящая политика описывает, какие данные обрабатывает мобильное приложение «Словарь осетинского языка» (далее — «Приложение»), в каких целях и на каких условиях.</p>
+    <p>Основная функция — офлайн-словарь. Поиск, избранное и блокнот работают без интернета. Опционально можно войти через Google и синхронизировать избранное и блокнот (Firebase).</p>
+
+    <h2>2. Оператор данных</h2>
+    <p>Контакт разработчика: <a href="mailto:sledochera777@gmail.com">sledochera777@gmail.com</a></p>
+
+    <h2>3. Какие данные собираются</h2>
+    <h3>3.1. Только на устройстве (без входа)</h3>
+    <ul>
+      <li>избранные слова и записи блокнота;</li>
+      <li>настройки интерфейса (размер шрифта, режимы карточек);</li>
+      <li>кэш словаря для ускорения поиска.</li>
+    </ul>
+    <p>Эти данные не передаются разработчику, пока не включена синхронизация.</p>
+
+    <h3>3.2. При входе через Google</h3>
+    <ul>
+      <li>идентификатор Firebase (<code>uid</code>);</li>
+      <li>email Google-аккаунта (если предоставлен Google).</li>
+    </ul>
+
+    <h3>3.3. Синхронизация в облаке (Firestore)</h3>
+    <p>В коллекции <code>iron_users/{uid}</code> сохраняются избранное и блокнот: тексты слов, коллекции, сложность, даты. История поиска не собирается.</p>
+    <p><strong>Не собираются:</strong> геолокация, контакты, фото, микрофон, платёжные данные.</p>
+
+    <h2>4. Цели обработки</h2>
+    <table>
+      <tr><th>Данные</th><th>Цель</th></tr>
+      <tr><td>Локальные записи</td><td>Офлайн-работа словаря</td></tr>
+      <tr><td>Google-вход</td><td>Идентификация для синхронизации</td></tr>
+      <tr><td>Firestore</td><td>Резервная копия на нескольких устройствах</td></tr>
+    </table>
+
+    <h2>5. Третьи лица</h2>
+    <p>Облако: <strong>Google Firebase</strong>. Политика Google: <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a>. Рекламы в приложении нет.</p>
+
+    <h2>6. Ваши права</h2>
+    <ul>
+      <li>пользоваться без входа — только офлайн;</li>
+      <li>выйти из аккаунта в меню приложения;</li>
+      <li>удалить локальные данные в настройках Android;</li>
+      <li>запросить удаление облачных данных на <a href="mailto:sledochera777@gmail.com">sledochera777@gmail.com</a>.</li>
+    </ul>
+
+    <h2>7. Разрешения</h2>
+    <ul>
+      <li><code>INTERNET</code> — вход Google и синхронизация;</li>
+      <li><code>ACCESS_NETWORK_STATE</code> — проверка сети.</li>
+    </ul>
+
+    <h2>8. Дети</h2>
+    <p>Приложение не собирает данные детей целенаправленно. Рейтинг 0+.</p>
+
+    <h2>9. Контакты</h2>
+    <p>Email: <a href="mailto:sledochera777@gmail.com">sledochera777@gmail.com</a><br>
+    Тема: «Словарь осетинского — конфиденциальность»</p>
+  </div>
+</body>
+</html>
